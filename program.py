@@ -4,6 +4,7 @@ from db import Trash
 class Program:
     def view_trash(trash):
         for p in trash:
+            print("-----쓰레기 목록 -----")
             print(f"종류 : {p.type}")
 
     def create_trash(trash):
@@ -27,6 +28,7 @@ class Program:
     def delete_trash(trash):
         prev_length = len(trash)
         print("===============================")
+        print("-----쓰레기 목록 -----")
         for t in enumerate(trash):
             print(f"{(t[0] + 1)} - {t[1].type}")
         print("===============================")
